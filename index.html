@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+    <title>4 DIGITS</title>
+  </head>
+  <body>
+    <h1>Welcome 4 DIGITS Guessing</h1>
+
+    <div class="container">
+      <section class="ex5 col-6 mx-auto d-flex justify-content-center">
+        <h3>Guess the Number</h3>
+        <span class="bg-success">C: Correct</span>
+        <span class="bg-warning">W: Wrong Place</span>
+        <span class="bg-danger">F: False</span>
+        <p>Enter a 4-digit number :</p>
+        <input type="text" id="guessUser" />
+        <button onload="generateNumber();" onclick="checkGuess();">
+          Guess
+        </button>
+        <button id="restartBtn" onclick="restartGame();">Restart</button>
+        <p class="resGame"></p>
+        <div id="resultGame"></div>
+      </section>
+    </div>
+    <footer class="footer">made with ❤ by Hamza Labbaalli</footer>
+
+    <script src="assets/main.js"></script>
+    <script src="assets/popper.min.js"></script>
+    <script src="assets/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/bootstrap.min.js"></script>
+  </body>
+</html>
